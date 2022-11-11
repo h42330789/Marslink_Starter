@@ -13,6 +13,7 @@ class FeedViewController: UIViewController {
 
     let loader = JournalEntryLoader()
     let pathfinder = Pathfinder()
+    let wxScanner = WxScanner()
     
     let collectionView: UICollectionView = {
     
@@ -51,9 +52,20 @@ class FeedViewController: UIViewController {
 extension FeedViewController: ListAdapterDataSource {
     
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        var items: [ListDiffable] = pathfinder.messages
+        // 1
+        var items: [ListDiffable] = [wxScanner.currentWeather]
         items += loader.entries as [ListDiffable]
-        return items
+        items += pathfinder.messages as [ListDiffable]
+        // 2
+        return items.sorted { (left: Any, right: Any) -> Bool in
+          guard let
+            left = left as? DateSortable,
+            let right = right as? DateSortable
+            else {
+              return false
+          }
+          return left.date > right.date
+        }
 
     }
     
@@ -61,6 +73,8 @@ extension FeedViewController: ListAdapterDataSource {
         
         if object is Message {
           return MessageSectionController()
+        } else if object is Weather {
+          return WeatherSectionController()
         } else {
           return JournalSectionController()
         }

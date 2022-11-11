@@ -20,18 +20,18 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import Foundation
 
-class Message: NSObject,DateSortable {
+class WxScanner {
   
-  let date: Date
-  let text: String
-  let user: User
-  
-  init(date: Date, text: String, user: User) {
-    self.date = date
-    self.text = text
-    self.user = user
-  }
+  let currentWeather = Weather(
+    temperature: 6,
+    high: 13,
+    low: -69,
+    date: Date(),
+    sunrise: "05:42",
+    sunset: "17:58",
+    condition: .dustStorm
+  )
   
 }

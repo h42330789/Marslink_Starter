@@ -29,6 +29,12 @@
 		5779FFA9291E409F001BA773 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA8291E409F001BA773 /* Message.swift */; };
 		5779FFAB291E40CD001BA773 /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFAA291E40CD001BA773 /* MessageSectionController.swift */; };
 		5779FFAD291E40D7001BA773 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFAC291E40D6001BA773 /* MessageCell.swift */; };
+		5779FFB0291E4155001BA773 /* WeatherSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFAE291E4155001BA773 /* WeatherSummaryCell.swift */; };
+		5779FFB1291E4155001BA773 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFAF291E4155001BA773 /* WeatherDetailCell.swift */; };
+		5779FFB3291E415E001BA773 /* WxScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFB2291E415E001BA773 /* WxScanner.swift */; };
+		5779FFB5291E4165001BA773 /* WeatherSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFB4291E4165001BA773 /* WeatherSectionController.swift */; };
+		5779FFB7291E4172001BA773 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFB6291E4172001BA773 /* Weather.swift */; };
+		5779FFB9291E41E1001BA773 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFB8291E41E1001BA773 /* DateSortable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,12 @@
 		5779FFA8291E409F001BA773 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5779FFAA291E40CD001BA773 /* MessageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
 		5779FFAC291E40D6001BA773 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		5779FFAE291E4155001BA773 /* WeatherSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSummaryCell.swift; sourceTree = "<group>"; };
+		5779FFAF291E4155001BA773 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
+		5779FFB2291E415E001BA773 /* WxScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WxScanner.swift; sourceTree = "<group>"; };
+		5779FFB4291E4165001BA773 /* WeatherSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherSectionController.swift; sourceTree = "<group>"; };
+		5779FFB6291E4172001BA773 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		5779FFB8291E41E1001BA773 /* DateSortable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
 		C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3FA05C5618EC7BE0845CC7 /* Pods-Marslink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +152,8 @@
 				5727091F291E18F900AAC0E0 /* SolFormatter.swift */,
 				5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */,
 				5779FFA8291E409F001BA773 /* Message.swift */,
+				5779FFB6291E4172001BA773 /* Weather.swift */,
+				5779FFB8291E41E1001BA773 /* DateSortable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +174,7 @@
 				5727092C291E18F900AAC0E0 /* Theme.swift */,
 				5727092D291E18F900AAC0E0 /* JournalLoader.swift */,
 				5779FFA6291E4081001BA773 /* Pathfinder.swift */,
+				5779FFB2291E415E001BA773 /* WxScanner.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -171,6 +186,8 @@
 				57270931291E18F900AAC0E0 /* JournalEntryDateCell.swift */,
 				57270932291E18F900AAC0E0 /* CustomNavigationBar.swift */,
 				5779FFAC291E40D6001BA773 /* MessageCell.swift */,
+				5779FFAF291E4155001BA773 /* WeatherDetailCell.swift */,
+				5779FFAE291E4155001BA773 /* WeatherSummaryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +197,7 @@
 			children = (
 				57270955291E251900AAC0E0 /* JournalSectionController.swift */,
 				5779FFAA291E40CD001BA773 /* MessageSectionController.swift */,
+				5779FFB4291E4165001BA773 /* WeatherSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -302,7 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5779FFB7291E4172001BA773 /* Weather.swift in Sources */,
+				5779FFB0291E4155001BA773 /* WeatherSummaryCell.swift in Sources */,
+				5779FFB1291E4155001BA773 /* WeatherDetailCell.swift in Sources */,
+				5779FFB3291E415E001BA773 /* WxScanner.swift in Sources */,
 				5727094E291E18F900AAC0E0 /* CustomNavigationBar.swift in Sources */,
+				5779FFB5291E4165001BA773 /* WeatherSectionController.swift in Sources */,
 				5727093F291E18F900AAC0E0 /* SolFormatter.swift in Sources */,
 				5727093E291E18F900AAC0E0 /* JournalEntry.swift in Sources */,
 				57270958291E251900AAC0E0 /* JournalSectionController.swift in Sources */,
@@ -312,6 +335,7 @@
 				5779FFAB291E40CD001BA773 /* MessageSectionController.swift in Sources */,
 				57270947291E18F900AAC0E0 /* TextSize.swift in Sources */,
 				5779FFA5291E3ECE001BA773 /* NSObject+IGListDiffable.swift in Sources */,
+				5779FFB9291E41E1001BA773 /* DateSortable.swift in Sources */,
 				5727094D291E18F900AAC0E0 /* JournalEntryDateCell.swift in Sources */,
 				5779FFA7291E4081001BA773 /* Pathfinder.swift in Sources */,
 				57270942291E18F900AAC0E0 /* AppDelegate.swift in Sources */,

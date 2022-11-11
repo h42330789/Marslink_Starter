@@ -22,7 +22,7 @@
 
 import Foundation
 
-class JournalEntry: NSObject {
+class JournalEntry: NSObject,DateSortable {
   
   let date: Date
   let text: String

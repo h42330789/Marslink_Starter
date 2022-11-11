@@ -22,16 +22,48 @@
 
 import UIKit
 
-class Message: NSObject,DateSortable {
+enum WeatherCondition: String {
+  case cloudy = "Cloudy"
+  case sunny = "Sunny"
+  case partlyCloudy = "Partly Cloudy"
+  case dustStorm = "Dust Storm"
   
+  var emoji: String {
+    switch self {
+    case .cloudy: return "☁️"
+    case .sunny: return "☀️"
+    case .partlyCloudy: return "⛅️"
+    case .dustStorm: return "🌪"
+    }
+  }
+}
+
+class Weather: NSObject,DateSortable {
+  
+  let temperature: Int
+  let high: Int
+  let low: Int
   let date: Date
-  let text: String
-  let user: User
+  let sunrise: String
+  let sunset: String
+  let condition: WeatherCondition
   
-  init(date: Date, text: String, user: User) {
+  init(
+    temperature: Int,
+    high: Int,
+    low: Int,
+    date: Date,
+    sunrise: String,
+    sunset: String,
+    condition: WeatherCondition
+    ) {
+    self.temperature = temperature
+    self.high = high
+    self.low = low
     self.date = date
-    self.text = text
-    self.user = user
+    self.sunrise = sunrise
+    self.sunset = sunset
+    self.condition = condition
   }
   
 }
