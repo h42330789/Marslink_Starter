@@ -25,6 +25,10 @@
 		57270958291E251900AAC0E0 /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57270955291E251900AAC0E0 /* JournalSectionController.swift */; };
 		5779FFA3291E3E76001BA773 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA2291E3E76001BA773 /* FeedViewController.swift */; };
 		5779FFA5291E3ECE001BA773 /* NSObject+IGListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */; };
+		5779FFA7291E4081001BA773 /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA6291E4081001BA773 /* Pathfinder.swift */; };
+		5779FFA9291E409F001BA773 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA8291E409F001BA773 /* Message.swift */; };
+		5779FFAB291E40CD001BA773 /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFAA291E40CD001BA773 /* MessageSectionController.swift */; };
+		5779FFAD291E40D7001BA773 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFAC291E40D6001BA773 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		57270955291E251900AAC0E0 /* JournalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
 		5779FFA2291E3E76001BA773 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+IGListDiffable.swift"; sourceTree = "<group>"; };
+		5779FFA6291E4081001BA773 /* Pathfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
+		5779FFA8291E409F001BA773 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5779FFAA291E40CD001BA773 /* MessageSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
+		5779FFAC291E40D6001BA773 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
 		C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3FA05C5618EC7BE0845CC7 /* Pods-Marslink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				5727091E291E18F900AAC0E0 /* JournalEntry.swift */,
 				5727091F291E18F900AAC0E0 /* SolFormatter.swift */,
 				5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */,
+				5779FFA8291E409F001BA773 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 				5727092A291E18F900AAC0E0 /* TextSize.swift */,
 				5727092C291E18F900AAC0E0 /* Theme.swift */,
 				5727092D291E18F900AAC0E0 /* JournalLoader.swift */,
+				5779FFA6291E4081001BA773 /* Pathfinder.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -160,6 +170,7 @@
 				57270930291E18F900AAC0E0 /* JournalEntryCell.swift */,
 				57270931291E18F900AAC0E0 /* JournalEntryDateCell.swift */,
 				57270932291E18F900AAC0E0 /* CustomNavigationBar.swift */,
+				5779FFAC291E40D6001BA773 /* MessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				57270955291E251900AAC0E0 /* JournalSectionController.swift */,
+				5779FFAA291E40CD001BA773 /* MessageSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -297,13 +309,17 @@
 				5727094C291E18F900AAC0E0 /* JournalEntryCell.swift in Sources */,
 				5727093B291E18F900AAC0E0 /* User.swift in Sources */,
 				5727094A291E18F900AAC0E0 /* JournalLoader.swift in Sources */,
+				5779FFAB291E40CD001BA773 /* MessageSectionController.swift in Sources */,
 				57270947291E18F900AAC0E0 /* TextSize.swift in Sources */,
 				5779FFA5291E3ECE001BA773 /* NSObject+IGListDiffable.swift in Sources */,
 				5727094D291E18F900AAC0E0 /* JournalEntryDateCell.swift in Sources */,
+				5779FFA7291E4081001BA773 /* Pathfinder.swift in Sources */,
 				57270942291E18F900AAC0E0 /* AppDelegate.swift in Sources */,
 				57270940291E18F900AAC0E0 /* ClassicFeedViewController.swift in Sources */,
+				5779FFA9291E409F001BA773 /* Message.swift in Sources */,
 				5779FFA3291E3E76001BA773 /* FeedViewController.swift in Sources */,
 				57270949291E18F900AAC0E0 /* Theme.swift in Sources */,
+				5779FFAD291E40D7001BA773 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
