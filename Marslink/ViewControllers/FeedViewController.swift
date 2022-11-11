@@ -39,6 +39,9 @@ class FeedViewController: UIViewController {
         adapter.collectionView = collectionView
         adapter.dataSource = self
         
+        pathfinder.delegate = self
+        pathfinder.connect()
+        
     }
 
     override func viewDidLayoutSubviews() {
@@ -84,4 +87,11 @@ extension FeedViewController: ListAdapterDataSource {
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
     }
+}
+
+// MARK: - PathfinderDelegate
+extension FeedViewController: PathfinderDelegate {
+  func pathfinderDidUpdateMessages(pathfinder: Pathfinder) {
+    adapter.performUpdates(animated: true)
+  }
 }
