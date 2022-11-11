@@ -23,6 +23,8 @@
 		5727094D291E18F900AAC0E0 /* JournalEntryDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57270931291E18F900AAC0E0 /* JournalEntryDateCell.swift */; };
 		5727094E291E18F900AAC0E0 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57270932291E18F900AAC0E0 /* CustomNavigationBar.swift */; };
 		57270958291E251900AAC0E0 /* JournalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57270955291E251900AAC0E0 /* JournalSectionController.swift */; };
+		5779FFA3291E3E76001BA773 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA2291E3E76001BA773 /* FeedViewController.swift */; };
+		5779FFA5291E3ECE001BA773 /* NSObject+IGListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		57270931291E18F900AAC0E0 /* JournalEntryDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryDateCell.swift; sourceTree = "<group>"; };
 		57270932291E18F900AAC0E0 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		57270955291E251900AAC0E0 /* JournalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalSectionController.swift; sourceTree = "<group>"; };
+		5779FFA2291E3E76001BA773 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+IGListDiffable.swift"; sourceTree = "<group>"; };
 		B9EFE4AB43572E52A0685AB4 /* Pods-Marslink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.debug.xcconfig"; sourceTree = "<group>"; };
 		C715FCAFBD8A3010CBEC1EE4 /* Pods_Marslink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marslink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3FA05C5618EC7BE0845CC7 /* Pods-Marslink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marslink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marslink/Pods-Marslink.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				5727091B291E18F900AAC0E0 /* User.swift */,
 				5727091E291E18F900AAC0E0 /* JournalEntry.swift */,
 				5727091F291E18F900AAC0E0 /* SolFormatter.swift */,
+				5779FFA4291E3ECE001BA773 /* NSObject+IGListDiffable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				57270921291E18F900AAC0E0 /* ClassicFeedViewController.swift */,
+				5779FFA2291E3E76001BA773 /* FeedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -292,9 +298,11 @@
 				5727093B291E18F900AAC0E0 /* User.swift in Sources */,
 				5727094A291E18F900AAC0E0 /* JournalLoader.swift in Sources */,
 				57270947291E18F900AAC0E0 /* TextSize.swift in Sources */,
+				5779FFA5291E3ECE001BA773 /* NSObject+IGListDiffable.swift in Sources */,
 				5727094D291E18F900AAC0E0 /* JournalEntryDateCell.swift in Sources */,
 				57270942291E18F900AAC0E0 /* AppDelegate.swift in Sources */,
 				57270940291E18F900AAC0E0 /* ClassicFeedViewController.swift in Sources */,
+				5779FFA3291E3E76001BA773 /* FeedViewController.swift in Sources */,
 				57270949291E18F900AAC0E0 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,22 +20,18 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import Foundation
+import IGListKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  
-  var window: UIWindow?
-  
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    window = UIWindow(frame: UIScreen.main.bounds)
-    window?.backgroundColor = UIColor.black
-    let nav = UINavigationController(navigationBarClass: CustomNavigationBar.self, toolbarClass: nil)
-    nav.pushViewController(FeedViewController(), animated: false)
-    window?.rootViewController = nav
-    window?.makeKeyAndVisible()
-    return true
+// MARK: - IGListDiffable
+extension NSObject: ListDiffable {
+
+  public func diffIdentifier() -> NSObjectProtocol {
+    return self
+  }
+
+  public func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+    return isEqual(object)
   }
   
 }
-
